@@ -20,8 +20,13 @@ public class TimeFormat {
 			hours = hours - 12;
 		}
 
-		// prints data
-		System.out.println( hours + ":" + minutes + " " + ampm);
+
+		// prints data acording to minutes lower or higher then ten
+		if (minutes < 10) {
+			System.out.println( hours + ":0" + minutes + " " + ampm);
+		} else {	
+			System.out.println( hours + ":" + minutes + " " + ampm);
+		}
 
         // Replace this comment with the rest of your code
 	}
