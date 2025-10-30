@@ -17,7 +17,9 @@ public class TimeFormat {
 		// converts pm if needed
 		if ( hours > 11 ) {	
 			ampm = "PM";
-			hours = hours - 12;
+			if (hours > 12) {
+				hours = hours - 12;
+			}
 		}
 
 
