@@ -9,7 +9,7 @@ public class FVCalc {
 		// caculate data
 		double future_value = current_value * Math.pow((1+rate_as_part_of_1),years);
 		// print data
-		System.out.println("After " + years + " Years, $" + current_value + " saved at " + rate_precentage + "% will yield $" + (int) future_value );
+		System.out.println("After " + years + " years, $" + current_value + " saved at " + rate_precentage + "% will yield $" + (int) future_value );
 
 
 	}
